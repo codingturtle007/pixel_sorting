@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    WASM!
+  </title>
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+    <h2>
+      Sort Image Pixels
+    </h2>
+
+    <div>
+      <button id="sort">Generate and Sort</button>
+    </div>
+    
+    <div>
+      <h2 id="time_taken">Time taken:</h2>
+    </div>
+
+    <div>
+      <label for="compiler">Choose a compiler:</label>
+
+      <select style="margin-top:0.5em;" name="compiler" id="wasm-js">
+        <option value="wasm">WASM</option>
+        <option value="js">JS</option>
+      </select>
+    </div>
+    
+    <div>
+      <canvas style="margin-top: 2em;background: black;image-rendering: pixelated;" id="img-canvas"></canvas>
+      <canvas style="margin-top: 2em;background: black;image-rendering: pixelated;" id="sort-canvas"></canvas>
+    </div>
+  </div>
+</body>
+
+</html>
